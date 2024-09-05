@@ -1,0 +1,23 @@
+.movie-container {
+    padding: 20px;
+    margin-left: 300px; /* SideBar의 너비만큼 여백 */
+}
+
+.review_button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review_button a {
+    color: white;
+    text-decoration: none;
+}
+
+.review_button:hover {
+    background-color: #0056b3;
+}

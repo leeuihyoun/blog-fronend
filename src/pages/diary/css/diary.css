@@ -1,0 +1,187 @@
+.test{
+    margin : 100px 0 0 50px;
+
+}
+
+.test2{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    padding: 20px;
+    margin-left: 300px; /* SideBar의 너비만큼 여백 */
+}
+
+/* ./diary.js */
+.add_btn{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2832BB;
+    color: #ffffff;
+    position: absolute;
+    right: 350px;
+    top: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* react-calendar 커스텀 */
+/* 캘린더 전체 위치 및 크기 */
+.react-calendar {
+    width: 50%;
+    height: 800px;
+    background: white;
+    border: 1px solid #a0a096;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bebebe;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+    margin : 100px 50px 0 300px;
+}
+
+.diaryImg{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+/* 캘린더 상단 내비게이션 */
+.react-calendar__navigation {
+    display: flex;
+    height: 90px;
+    margin-bottom: 1em;
+
+    span{
+        font-size: 24px;
+    }
+}
+
+/* 현재 날짜 */
+.react-calendar__tile--now {
+    background: #f1f1f1;
+    border-radius: 14px;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background : #d8d8d8;
+}
+
+
+.react-calendar__month-view{
+    font-size:22px;
+}
+
+.react-calendar__tile {
+    height: 130px;
+}
+
+/*hover, focus, 선택됐을 시 */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus,
+.react-calendar__tile--active {
+    border-radius: 14px;
+}
+
+
+
+/* ./diaryAdd.js */
+.add_table{
+    width: 70%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+.add_table th, .add_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.add_table th{
+    width: 100px;
+    height: 70px;
+}
+
+.add_table td{
+    width: 30%;
+}
+
+.add_textBox{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 700px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.btn_container{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.insert_btn, .back_btn{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.insert_btn{
+    border: none;
+    background-color: #2832BB;
+    color: #ffffff;
+}
+
+.back_btn{
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.mood_icon-div{
+    display: none;
+}
+
+.mood_icon-label img{
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.mood_icon-div:checked+.mood_icon-label img{
+    box-shadow: 0px 0px 10px #bebebe;
+}
+
+/* react-quill 커스텀 */
+.quill {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* react-datepicker 커스텀 */
+.react-datepicker__day--outside-month {
+    color: #a8a8a8 !important;
+    pointer-events: none;
+}
+
+
+.react-datepicker__view-calendar-icon input{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px 5px 10px 35px;
+}
+
+.react-datepicker__calendar-icon{
+    margin: 4px;
+}

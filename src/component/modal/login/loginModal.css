@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+}
+
+.just-center{
+  justify-content: center;
+}
+
+.just-btw{
+  justify-content: space-between;
+}
+
+.aligin-center{
+  align-items: center;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 오버레이 효과로 배경을 어둡게 만듭니다 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 400px;
+  min-width: 400px;
+}
+
+.title1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1{
+  border: none;
+  background-color: #ccc;
+  padding: 0.5rem;
+  font-size: 0.825rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.btn-width{
+  width: 200px;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+}
+.email-form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input1 {
+  border: solid 1.5px #ccc;
+  border-radius: 7px; 
+  background: none;
+  padding: 15px;
+  font-size: 15px;
+  color: #333;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.label {
+  position: absolute;
+  pointer-events: none;
+  top: 15px;
+  left: 10px;
+  /* transform: translateY(0); */
+  font-size: 15px;
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  background-color: transparent;
+  padding: 0 0.2rem;
+  color: #999;
+}
+
+
+.input1:focus, .input1:valid {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.input1:focus ~ .label, .label.shrink {
+  transform: translateY(-120%) scale(0.8);
+  background-color: #fff;
+  padding: 0 0.2rem;
+  color: #333;
+}
+
+.p-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  height: 20px;
+}
+
+.p-contents{
+  display: flex;
+  gap: 5px;
+}
+
+.remember-container{
+  display: flex;
+  align-items: center;
+}
+
+.find::after{
+  content: "|";
+  padding-left: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size:30pt;
+  font-weight: 500;
+}
+
+.social-login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
