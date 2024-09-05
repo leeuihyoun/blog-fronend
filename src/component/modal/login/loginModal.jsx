@@ -48,7 +48,7 @@ export default function LoginModal({onClose, errorMessage, source}) {
 
 
         try {
-            const res = await axios.post('http://16.184.0.133:8080/api/auth/login', { email, password }, {
+            const res = await axios.post('https://16.184.0.133:8080/api/auth/login', { email, password }, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
